@@ -1,0 +1,96 @@
+[6:19 PM, 9/18/2023] EshaRaziaCui: public class Music {
+    String title;
+    String duration;
+    String genre;
+    String singer;
+    Date releaseDate;
+
+    Music(String title,String duration,String genre, String singer, Date releaseDate){
+        this.title=title;
+        this.duration=duration;
+        this.genre=genre;
+        this.singer=singer;
+        this.releaseDate=releaseDate;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getSinger() {
+        return singer;
+    }
+
+    public void setSinger(String singer) {
+        this.singer = singer;
+    }
+
+    public Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(Date releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+    public String toString(){
+        return String.format("%s %s %s %s %s",title,duration,genre,singer,releaseDate);
+    }
+}
+[6:20 PM, 9/18/2023] EshaRaziaCui: public class Date {
+    int day;
+    int month;
+    int year;
+
+    Date(int day,int month,int year){
+        this.day=day;
+        this.month=month;
+        this.year=year;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+    public String toString(){
+        return String.format("%d %d %d",day,month,year);
+    }
+}
